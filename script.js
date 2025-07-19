@@ -79,7 +79,7 @@ function initTyping(){
 }
 
 function initTime(){
-    if(timeLeft>0){
+    if(timeLeft>0 && charIndex < typingText.querySelectorAll('span').length){
 
         timeLeft-- ;
         time.innerText=timeLeft ;
